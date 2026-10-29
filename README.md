@@ -1,39 +1,32 @@
-# Empire Rising — Offline Idle Business Tycoon
+# Empire Rising — City Tycoon
 
-An original, mobile-friendly idle business game with **zero dependencies**, **no ads**, and **no backend**.
+An original offline-first business management game for mobile and desktop. No backend, account, advertisements, or external assets required.
 
-## Play locally
+## Play
 
-Open `index.html` in a browser. Gameplay and local saves work without a server. To test installability and the offline service worker, serve the directory on localhost:
+Open `index.html` in a browser, or deploy the project using GitHub Pages.
 
-```bash
-python3 -m http.server 8000
-```
+## GitHub Pages deployment
 
-Then open http://localhost:8000. Visit once while online so the service worker can cache the files.
-
-## Publish on GitHub Pages
-
-1. Create a new public GitHub repository.
-2. Upload **all files in this folder** to the repository root.
-3. Go to **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
-5. Open the Pages URL shown by GitHub after deployment.
+1. Create or open a GitHub repository.
+2. Upload all files in this folder to the repository root (not inside another folder).
+3. Open **Settings → Pages**.
+4. Choose **Deploy from a branch**, **main**, **/(root)** and save.
+5. Visit `https://YOUR-USERNAME.github.io/YOUR-REPO/` once deployment finishes.
 
 ## Features
 
-- 9 businesses with compounding upgrades and hiring managers
-- 5 empire-wide technology upgrades and 4 districts
-- Tap-to-work starter earnings
-- Passive earnings, even when you close the game (75% rate, capped at 8 hours)
-- Prestige progression with permanent income multipliers
-- Local autosave, JSON export/import, and reset
-- Installable PWA with offline cache on HTTPS or localhost
-- Responsive desktop and mobile design
+- Nine businesses in a visual city grid
+- Supply inventory, automated customer sales, employee staffing, equipment and storage upgrades
+- Marketing, reputation, CEO desk and research
+- Automatic saving every five seconds and export/import of save JSON
+- Offline earnings (limited by inventory and capped at eight hours)
+- Installable PWA with service worker caching
+- Responsive layout for mobile devices
 
-## Save behavior
+## Notes
 
-Saves use browser `localStorage` and stay on that browser/device. Use **Export Save** and **Import Save** to transfer progress. Clearing site data deletes local saves unless exported. Browser private mode may not retain saves.
+Save data is stored locally in the browser. This is a new city-management edition and uses the `empire-rising-city-v2` save key, separate from the earlier clicker version. No server-side saves. The city view is an illustrative grid, not a pathfinding simulation.
 
 ## License
 
